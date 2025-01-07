@@ -25,7 +25,7 @@ public class BubbleSort {
         for(int i=0; i<arr.length-1; i++) {
             for(int j=0; j<arr.length-1-i; j++) {
                 //오름차순
-                if(arr[j] > arr[j+1]) { //인접한 것 둘 비교
+                if(arr[j] > arr[j+1]) { //인접한 것 둘 비교 
                     int temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
