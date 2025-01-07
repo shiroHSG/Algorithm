@@ -1,4 +1,6 @@
-package Bubble_sort;
+package Sort;
+
+import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] args) {
@@ -10,17 +12,13 @@ public class BubbleSort {
         System.out.println("정렬 전 배열");
         sorter.printArr(arr);
 
-        sorter.bubbleSort(arr);
-
         System.out.println("오름차순 정렬 후 배열");
+        sorter.bubbleSort(arr);
         sorter.printArr(arr);
     }
 
     public void printArr(int[] arr) {
-        for(int n : arr) {
-            System.out.print(n + " ");
-        }
-        System.out.println();
+        System.out.println(Arrays.toString(arr));
     }
 
     public void bubbleSort(int[] arr) {
