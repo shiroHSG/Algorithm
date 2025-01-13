@@ -1,14 +1,4 @@
-package ReverseList;
-
-class ListNode {
-    int value;
-    ListNode next;
-
-    ListNode(int value) {
-        this.value = value;
-        this.next = null;
-    }
-}
+package List;
 
 public class ReverseLinkedList {
     public static ListNode reverseList(ListNode head) {
@@ -33,7 +23,7 @@ public class ReverseLinkedList {
     public static void printList(ListNode head) {
         ListNode current = head;
         while(current != null) {
-            System.out.print(current.value + " -> ");
+            System.out.print(current.val + " -> ");
             current = current.next;
         }
         System.out.println("null");

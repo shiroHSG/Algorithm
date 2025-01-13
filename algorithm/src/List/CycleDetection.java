@@ -1,20 +1,11 @@
-package CycleDetection;
-
-class ListNode {
-    int value;
-    ListNode next;
-    ListNode(int value) {
-        this.value = value;
-        next = null;
-    }
-}
+package List;
 
 public class CycleDetection {
     public static void printListNode(ListNode head) {
         int i=0;
         ListNode current = head;
         while(current!=null) {
-            System.out.print(current.value + " -> ");
+            System.out.print(current.val + " -> ");
             current = current.next;
             if(i++==10)
                 break;
